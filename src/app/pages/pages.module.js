@@ -9,6 +9,8 @@
     'ui.router',
 
     'FileFlow.pages.login',
+    'FileFlow.pages.inicio',
+    'FileFlow.pages.uploader',
   ])
       .config(routeConfig);
 

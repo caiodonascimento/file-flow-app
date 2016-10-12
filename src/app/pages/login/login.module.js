@@ -5,9 +5,6 @@
 (function () {
   'use strict';
   
-  angular.module('FileFlow.pages.login', [])
-    .config(routeConfig);
-
   /** @ngInject */
   function routeConfig($stateProvider) {
     $stateProvider
@@ -15,7 +12,11 @@
         url: '/login',
         templateUrl: 'app/pages/login/login.html',
         controller: 'LoginCtrl',
+        controllerAs: 'login',
       });
   }
+
+  angular.module('FileFlow.pages.login', [])
+    .config(routeConfig);
 
 })();

@@ -4,12 +4,12 @@
 @import 'theme/buttons.scss';
 @import 'app/form.scss';
 
-html, ui-view {
+html {
   min-height: 520px;
   height: 100%;
 }
 
-body, ui-view {
+body {
   @include main-background();
   height: 100%;
 }
